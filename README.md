@@ -2,18 +2,18 @@
 
 Core API with extras for Mantra.
 
-### Introduction
+## Introduction
 
 This repo contains the core APP api where we create an mantra app and initialize it. Also, this package contains exported functions from [`react-simple-di`](https://github.com/kadirahq/react-simple-di). The best thing is Mantra Plus supports middlewares! Now you don't have to rewrite, copy and paste your context.
 
-### Installation
+## Installation
 
 ```
 npm i --save mantra-plus react
 ```
 
 
-### Basic Usage
+## Basic Usage
 
 ```
 import MyComp from './myComp';
@@ -49,7 +49,12 @@ app.loadModule(someOtherModule);
 app.init();
 ```
 
-### Writing a Middleware
+## Middlewares
+
+- [`mantra-redux`](https://github.com/sammkj/mantra-redux) Add Redux to your app
+- [`mantra-apollo`](https://github.com/sammkj/mantra-apollo) Add Apollo to your app
+
+## Writing a Middleware
 
 Middleware must return an object that contains any of `moduleWillLoad`, `moduleWillInit`. Below code is available on NPM (`mantra-redux`).
 
