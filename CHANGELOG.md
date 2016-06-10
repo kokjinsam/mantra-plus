@@ -1,15 +1,20 @@
 # Change Log
 
+### v2.0.7
+09-June-2016
+
+* Added context to `moduleWillLoad`
+
 ### v2.0.6
 08-June-2016
 
 * Removed options
-* Added loadMiddlewares
+* Added `loadMiddlewares`
 
 ### v2.0.3
 07-June-2016
 
-* Added simple-di as a dependency.
+* Added `simple-di` as a dependency.
 
 ### v2.0.2
 07-June-2016

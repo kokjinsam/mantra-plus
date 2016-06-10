@@ -99,7 +99,11 @@ class App {
     if (this._moduleWillLoad.length > 0) {
       const middlewares = this._moduleWillLoad;
       middlewares.forEach((middleware) => {
-        middleware.call(this, module);
+        // module.actions doesn't have context binded.
+        // to use actions, context needs to be passed in
+        // manually like this:
+        // module.action.todo.someAction(context, actionArgs);
+        middleware.call(this, module, this.context);
       });
     }
 

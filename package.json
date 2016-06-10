@@ -1,6 +1,6 @@
 {
   "name": "mantra-plus",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Core API for Mantra",
   "main": "index.js",
   "repository": {
