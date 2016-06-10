@@ -67,7 +67,7 @@ function reduxMiddleware(options) {
   } = options;
 
   return {
-    moduleWillLoad(module) {
+    moduleWillLoad(module, context) {
       if (module.reducers) {
         if (typeof reducers !== 'object' || typeof module.reducers !== 'object') {
           const message = "Module's reducers field should be a map of reducers.";
